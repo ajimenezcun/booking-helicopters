@@ -1,13 +1,10 @@
 ---
 interface Props {
     airport: string;
-    data: object;
-    info: object;
-    address: object;
     link: string;
 }
 
-const { airport, data, info, address, link } = Astro.props;
+const { airport, link } = Astro.props;
 let url = `/airports/${link}`;
 ---
 
