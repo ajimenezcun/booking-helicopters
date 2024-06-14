@@ -1,0 +1,18 @@
+---
+interface Props {
+    route: string;
+    url: string;
+}
+const { route, url } = Astro.props;
+const link = `/routes/${url}`;
+---
+
+<a
+    href={link}
+    class="flex items-center gap-3 block mb-3 transition-all duration-300 hover:translate-x-2 hover:border-l-blue-400"
+>
+    <img src="/public/svg/helicopter.svg" alt="" width="24" height="24" />
+    <b>
+        {route}
+    </b>
+</a>

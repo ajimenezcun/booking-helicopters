@@ -1,0 +1,41 @@
+---
+interface Props {
+    theme: string;
+}
+
+const { theme } = Astro.props;
+---
+
+<header class:list={theme} class="py-5">
+    <section
+        class="container relative flex flex-col gap-10 lg:justify-between lg:flex-row lg:w-10/12 lg:mx-auto xl:gap-20"
+    >
+        <div class="flex gap-20">
+            <a href="/" title="Helicopter Flights in Cancun">brand-image</a>
+            <nav>
+                <ul
+                    class="flex flex-col lg:flex-row lg:justify-end lg:gap-7 font-bold text-lg"
+                >
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/flights">Flights</a></li>
+                    <li><a href="/overflights">Overflights</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/places">Places</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <a
+                href="#"
+                class="button-hire-nav transition-all duration-300 hover:bg-white hover:text-black"
+                >Hire a Flight</a
+            >
+            <!-- <a
+                href="#"
+                class="button-lang transition-all duration-300 hover:bg-gray-300"
+                >ES</a
+            > -->
+        </div>
+    </section>
+</header>

@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import RouteCard from "../components/RouteCard.astro";
+---
+
+<Layout
+    title="About Caribe Helicopters | Caribe Helicopters"
+    description=""
+    headerTheme="solid"
+>
+    <section
+        class="mb-20 bg-[url('/public/bg-section.jpg')] bg-no-repeat bg-cover bg-center bg-fixed relative py-20"
+    >
+        <article
+            class="text-center relative z-[200] text-white lg:w-10/12 lg:mx-auto"
+        >
+            <h1>Helicopter Routes</h1>
+            <p class="text-lg mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
+                nesciunt aperiam accusantium asperiores consectetur tenetur
+                harum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate ea eaque quae aspernatur excepturi, placeat veritatis
+                sapiente? Ratione adipisci ullam eveniet, cupiditate ab,
+                perferendis at quidem ad modi impedit quisquam!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptate, nemo ut fugit dolorem quo blanditiis tempore eos enim
+                similique, dolores exercitationem culpa eaque. Ab aperiam
+                consequatur corporis et aut nostrum!
+            </p>
+        </article>
+        <div class="mask-section"></div>
+    </section>
+
+    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+        <h2>Helicopter Flights Routes</h2>
+        <p class="mb-10">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia at
+            odit quia sint ad adipisci ipsa dolorum! Dolorem optio itaque,
+            excepturi soluta perspiciatis ad omnis temporibus ipsam mollitia,
+            voluptatem officiis?
+        </p>
+
+        <div class="flex gap-5 mb-10">
+            <a href="#" class="py-3 px-5 bg-gray-300">From Cancun</a>
+            <a
+                href="#"
+                class="py-3 px-5 bg-gray-50 transition-all duration-300 hover:bg-gray-300"
+                >From Playa del Carmen</a
+            >
+            <a
+                href="#"
+                class="py-3 px-5 bg-gray-50 transition-all duration-300 hover:bg-gray-300"
+                >From Holbox</a
+            >
+            <a
+                href="#"
+                class="py-3 px-5 bg-gray-50 transition-all duration-300 hover:bg-gray-300"
+                >From Cozumel</a
+            >
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+            <RouteCard
+                from="Cancun"
+                to="Playa del Carmen"
+                pricing="1,200"
+                link="cancun-to-playa-del-carmen"
+            />
+            <RouteCard
+                from="Cancun"
+                to="Holbox"
+                pricing="1,400"
+                link="cancun-to-holbox"
+            />
+        </div>
+    </section>
+</Layout>

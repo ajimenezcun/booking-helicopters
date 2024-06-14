@@ -1,0 +1,76 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TablePricing from "../../components/TablePricing.astro";
+import AirportCard from "../../components/AirportCard.astro";
+import FaqCard from "../../components/FaqCard.astro";
+import PostCard from "../../components/PostCard.astro";
+---
+
+<Layout
+    title="Helicopter Flights in Cancun, Holbox, Cozumel and the Caribbean | Caribe Helicopters"
+    description=""
+    headerTheme="transparent"
+>
+    <section class="flex lg:h-[600px] mb-10">
+        <div class="overview lg:w-3/5 lg:pl-14">
+            <h1 class="mt-[150px]">Cancun</h1>
+            <p class="text-lg mb-5 pr-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
+                nesciunt aperiam accusantium asperiores consectetur tenetur
+                harum.
+            </p>
+            <p class="text-lg mb-5 pr-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas pariatur facere, alias dolor odio esse illum in harum
+                ullam dignissimos laboriosam recusandae sequi sint asperiores
+                voluptatum repudiandae laudantium delectus dicta.
+            </p>
+            <p class="text-lg mb-5 pr-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                eaque illum tempora repellendus quasi rerum perferendis et quo
+                vero, maxime, magnam alias aliquam sapiente iure a accusamus,
+                quidem nulla recusandae?
+            </p>
+        </div>
+        <div class="bg-gray-50 lg:w-2/5">
+            <img
+                src="/public/demo.png"
+                alt=""
+                class="lg:h-[600px] object-cover"
+            />
+        </div>
+    </section>
+    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+        <h2>Helicopter Flights</h2>
+        <p class="mb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            minima necessitatibus repudiandae modi sit corporis maxime
+            perferendis ipsum sapiente deserunt. Temporibus molestiae
+            voluptatibus soluta! Eveniet vel mollitia facere a consequuntur?
+        </p>
+
+        <h3 class="block mb-5">Helicopter Flights Pricing</h3>
+        <TablePricing />
+    </section>
+
+    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+        <h2>Helicopter Overflights</h2>
+        <p class="mb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            minima necessitatibus repudiandae modi sit corporis maxime
+            perferendis ipsum sapiente deserunt. Temporibus molestiae
+            voluptatibus soluta! Eveniet vel mollitia facere a consequuntur?
+        </p>
+
+        <h3 class="block mb-5">Helicopter Overflights Pricing</h3>
+        <TablePricing />
+    </section>
+
+    <style>
+        .overview {
+            background: url("/public/bg-pattern.svg") no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</Layout>

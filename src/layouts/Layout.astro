@@ -1,0 +1,102 @@
+---
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+
+interface Props {
+	title: string;
+	description: string;
+	headerTheme?: string;
+}
+
+const { title, description, headerTheme = "solid" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nanum+Gothic&family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<Header theme={headerTheme} />
+		<slot />
+		<Footer />
+	</body>
+</html>
+<style is:global>
+	.mask-section {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4);
+		z-index: 100;
+	}
+
+	header.transparent {
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	header.solid {
+		background: white;
+	}
+
+	.button-hire-nav {
+		background: black;
+		color: white;
+		padding: 15px 20px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.solid .button-hire-nav {
+		background: white;
+		color: black;
+	}
+	.solid .button-hire-nav:hover {
+		background: black;
+		color: white;
+	}
+	.button-lang {
+		background: white;
+		color: black;
+		padding: 15px;
+	}
+	.fieldbox {
+		display: block;
+		margin-bottom: 20px;
+
+		label {
+			display: block;
+			font-size: 14px;
+			color: #999;
+		}
+
+		input,
+		select,
+		textarea {
+			display: block;
+			box-sizing: border-box;
+			padding: 10px;
+			width: 100%;
+			margin-top: 5px;
+			border: 2px solid #e8e8e8;
+		}
+	}
+</style>

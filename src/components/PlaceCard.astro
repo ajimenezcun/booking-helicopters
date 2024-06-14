@@ -1,0 +1,41 @@
+---
+interface Props {
+    place: string;
+    url: string;
+}
+
+const { place, url } = Astro.props;
+let link = `/places/${url}`;
+---
+
+<div class="group">
+    <a href={link}>
+        <div class="relative overflow-hidden">
+            <img
+                src="/public/place-1.jpg"
+                alt=""
+                class="transition-all duration-300 group-hover:scale-[1.1]"
+            />
+            <div
+                class="absolute left-0 bottom-0 w-full py-2 pl-5 bg-gradient-to-t from-black to-transparent"
+            >
+                <h3
+                    class="text-white transition-all duration-300 group-hover:underline"
+                >
+                    {place}
+                </h3>
+            </div>
+        </div>
+    </a>
+    <p class="mt-5 mb-5">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Necessitatibus, nam obcaecati laboriosam cumque quos eum corporis
+        tempora eos facilis laborum ut deleniti omnis consequatur dolor ipsam
+        autem magnam labore deserunt?
+    </p>
+    <a
+        href={link}
+        class="bg-black text-white px-5 py-3 transition-all duration-300 hover:shadow-xl"
+        >Explore</a
+    >
+</div>

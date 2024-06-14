@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PlaceCard from "../components/PlaceCard.astro";
+---
+
+<Layout
+    title="Airport for Helicopter Flights | Caribe Helicopters"
+    description=""
+    headerTheme="solid"
+>
+    <section
+        class="mb-20 bg-[url('/public/bg-section.jpg')] bg-no-repeat bg-cover bg-center bg-fixed relative py-20"
+    >
+        <article
+            class="text-center relative z-[200] text-white lg:w-10/12 lg:mx-auto"
+        >
+            <h1>Destinations by Helicopter Flights</h1>
+            <p class="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
+                nesciunt aperiam accusantium asperiores consectetur tenetur
+                harum.
+            </p>
+        </article>
+        <div class="mask-section"></div>
+    </section>
+
+    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+        <div class="flex gap-5 mt-20 mb-20">
+            <article class="w-1/2">
+                <h2>Flight for the Mexican Caribbean</h2>
+                <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Soluta, quaerat vitae ullam sint dicta ducimus quae eaque
+                    quibusdam molestiae voluptatibus voluptates quia sed.
+                    Repellat, totam voluptatem officiis perferendis velit
+                    deserunt. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Soluta iusto repellat cum, magni qui deserunt veniam
+                    aut ad deleniti cupiditate maiores dicta, quia nesciunt nam
+                    ipsum harum ipsa provident quam.
+                </p>
+                <p class="mb-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dolore ratione aperiam corrupti cupiditate libero
+                    perferendis blanditiis, ipsum quaerat excepturi iste quae et
+                    ut at quam earum id omnis quasi impedit!
+                </p>
+            </article>
+            <div class="bg-gray-50 p-5 w-1/2 h-[500px]"></div>
+        </div>
+    </section>
+
+    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+        <div class="grid gap-5 gap-y-14 grid-cols-1 lg:grid-cols-2">
+            <PlaceCard place="Cancun" url="cancun" />
+            <PlaceCard place="Holbox" url="holbox" />
+            <PlaceCard place="Chichen Itza" url="chichen-itza" />
+            <PlaceCard place="Cozumel" url="cozumel" />
+        </div>
+    </section>
+</Layout>

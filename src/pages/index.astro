@@ -1,0 +1,322 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TablePricing from "../components/TablePricing.astro";
+import AirportCard from "../components/AirportCard.astro";
+import FaqCard from "../components/FaqCard.astro";
+import PostCard from "../components/PostCard.astro";
+---
+
+<Layout
+	title="Helicopter Flights in Cancun, Holbox, Cozumel and the Caribbean | Caribe Helicopters"
+	description=""
+	headerTheme="transparent"
+>
+	<section class="flex lg:h-[600px] mb-10">
+		<div class="overview lg:w-3/5 lg:pl-14">
+			<h1 class="mt-[200px]">Helicopter Flights in Cancun</h1>
+			<p class="text-lg mb-10">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
+				nesciunt aperiam accusantium asperiores consectetur tenetur
+				harum.
+			</p>
+			<a
+				href=""
+				class="group bg-black text-white py-4 px-7 text-lg font-bold flex w-fit items-center gap-3 justify-center transition-all duration-300 hover:bg-white hover:text-black hover:shadow-xl"
+			>
+				<span>Hire a Flight</span>
+			</a>
+		</div>
+		<div class="bg-gray-50 lg:w-2/5">
+			<img
+				src="/public/demo.png"
+				alt=""
+				class="lg:h-[600px] object-cover"
+			/>
+		</div>
+	</section>
+	<section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+		<h2 class="text-center">Helicopter Flight Services</h2>
+		<p class="text-center mb-10">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+			minima necessitatibus repudiandae modi sit corporis maxime
+			perferendis ipsum sapiente deserunt. Temporibus molestiae
+			voluptatibus soluta! Eveniet vel mollitia facere a consequuntur?
+		</p>
+
+		<div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+			<article class="relative group overflow-hidden">
+				<a href="/flights" title="Helicopter Flights in Cancun">
+					<img
+						src="/public/overflights.jpg"
+						alt=""
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+					<div
+						class="absolute left-0 bottom-0 w-full py-2 pl-5 bg-gradient-to-t from-black to-transparent"
+					>
+						<h3
+							class="text-white transition-all duration-300 group-hover:underline"
+						>
+							Helicopter Flights
+						</h3>
+					</div>
+				</a>
+			</article>
+			<article class="relative group overflow-hidden">
+				<a href="/overflights" title="Cancun Overflights in Helicopter">
+					<img
+						src="/public/helicopter-flights.jpg"
+						alt=""
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+					<div
+						class="absolute left-0 bottom-0 w-full py-2 pl-5 bg-gradient-to-t from-black to-transparent"
+					>
+						<h3
+							class="text-white transition-all duration-300 group-hover:underline"
+						>
+							Helicopter Overflights
+						</h3>
+					</div>
+				</a>
+			</article>
+		</div>
+
+		<h3 class="block mt-20 mb-5 text-center">Helicopter Flights Pricing</h3>
+		<TablePricing />
+	</section>
+
+	<section class="mb-20 bg-gray-100 py-10">
+		<div class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+			<h2 class="text-center">Caribe Airports</h2>
+			<p class="text-center mb-10">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+				vel! Facere corporis possimus velit quod, est tempora quidem
+				dolor earum nisi voluptatum? Dolorum totam, ex laborum
+				doloremque repudiandae in possimus!
+			</p>
+			<div class="grid grid-cols-1 gap-5 lg:grid-cols-4">
+				<AirportCard airport="Cancun Airport">
+					<img
+						src="/public/airport-1.jpg"
+						alt=""
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+				</AirportCard>
+				<AirportCard airport="Cozumel Airport">
+					<img
+						src="/public/airport-2.jpg"
+						alt=""
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+				</AirportCard>
+				<AirportCard airport="Holbox Airport">
+					<img
+						src="/public/airport-1.jpg"
+						alt=""
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+				</AirportCard>
+				<AirportCard airport="Tulum Airport">
+					<img
+						src="/public/airport-2.jpg"
+						alt=""
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+				</AirportCard>
+			</div>
+		</div>
+	</section>
+	<section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+		<h3 class="mb-10">Why choose Caribe Helicopters?</h3>
+		<div class="grid grid-cols-1 gap-5 mb-10 lg:grid-cols-3">
+			<article
+				class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="48"
+					height="48"
+					viewBox="0 0 24 24"
+					><g fill="none" fill-rule="evenodd"
+						><path
+							d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+						></path><path
+							fill="#999999"
+							d="M11.298 2.195a2 2 0 0 1 1.232-.055l.172.055l7 2.625a2 2 0 0 1 1.291 1.708l.007.165v5.363a9 9 0 0 1-4.709 7.911l-.266.139l-3.354 1.677a1.5 1.5 0 0 1-1.198.062l-.144-.062l-3.354-1.677a9 9 0 0 1-4.97-7.75l-.005-.3V6.693a2 2 0 0 1 1.145-1.808l.153-.065zm4.135 6.434l-4.598 4.598l-1.768-1.768a1 1 0 0 0-1.414 1.415l2.404 2.404a1.1 1.1 0 0 0 1.556 0l5.234-5.235a1 1 0 1 0-1.414-1.414"
+						></path></g
+					></svg
+				>
+				<h4 class="mt-5">We are Safety</h4>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Numquam vitae excepturi quia optio vel asperiores.
+				</p>
+			</article>
+			<article
+				class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="48"
+					height="48"
+					viewBox="0 0 24 24"
+					><path
+						fill="#999999"
+						d="M18 3a1 1 0 0 1 .832.445l.062.108l3 6a1 1 0 0 1-.067 1.01l-.084.106l-8.973 9.973a.99.99 0 0 1-.886.351l-.113-.019a.98.98 0 0 1-.532-.322L2.257 10.67a1 1 0 0 1-.204-.991l.053-.125l3-6a1 1 0 0 1 .77-.545L6 3zm-3.424 8H9.423L12 17.342zm4.177 0h-2.018l-1.661 4.088zM7.264 11H5.246l3.678 4.087zm1.358-6H6.618l-2 4h2.704zm4.651 0h-2.547L9.427 9h5.145zm4.108 0h-2.004l1.3 4h2.704z"
+					></path></svg
+				>
+				<h4 class="mt-5">Providing Quality</h4>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Numquam vitae excepturi quia optio vel asperiores.
+				</p>
+			</article>
+			<article
+				class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="48"
+					height="48"
+					viewBox="0 0 24 24"
+					><path
+						fill="#999999"
+						d="M13 9V1.07c3.94.49 7 3.85 7 7.93zM6.34 20.66A8 8 0 0 1 4 15v-4h16v4c0 2.12-.84 4.16-2.34 5.66A8 8 0 0 1 12 23c-2.12 0-4.16-.84-5.66-2.34M11 9V1.07A8.01 8.01 0 0 0 4.25 7C4.09 7.64 4 8.31 4 9zM6.34 7C6.82 5.65 7.78 4.5 9 3.81V7z"
+					></path></svg
+				>
+				<h4 class="mt-5">Quick and easy</h4>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Numquam vitae excepturi quia optio vel asperiores.
+				</p>
+			</article>
+		</div>
+
+		<h3 class="mt-20 mb-5">Helicopter Flights FAQs</h3>
+		<FaqCard
+			question="How safe is it really to travel in private and non-commercial helicopters?"
+		>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Adipisci saepe eum, iure quam, provident voluptatum asperiores
+				veritatis rerum quibusdam maxime ipsam amet quisquam optio
+				tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
+			</p>
+		</FaqCard>
+		<FaqCard
+			question="How safe is it really to travel in private and non-commercial helicopters?"
+		>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Adipisci saepe eum, iure quam, provident voluptatum asperiores
+				veritatis rerum quibusdam maxime ipsam amet quisquam optio
+				tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
+			</p>
+		</FaqCard>
+		<FaqCard
+			question="How safe is it really to travel in private and non-commercial helicopters?"
+		>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Adipisci saepe eum, iure quam, provident voluptatum asperiores
+				veritatis rerum quibusdam maxime ipsam amet quisquam optio
+				tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
+			</p>
+		</FaqCard>
+		<FaqCard
+			question="How safe is it really to travel in private and non-commercial helicopters?"
+		>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Adipisci saepe eum, iure quam, provident voluptatum asperiores
+				veritatis rerum quibusdam maxime ipsam amet quisquam optio
+				tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
+			</p>
+		</FaqCard>
+		<FaqCard
+			question="How safe is it really to travel in private and non-commercial helicopters?"
+		>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Adipisci saepe eum, iure quam, provident voluptatum asperiores
+				veritatis rerum quibusdam maxime ipsam amet quisquam optio
+				tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
+			</p>
+		</FaqCard>
+
+		<div class="mt-20">
+			<h2 class="mb-5">Helicopters Flights Blog</h2>
+			<div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+				<PostCard
+					title="Helicopter flight from Cancun to Holbox"
+					link="helicopter-flight-cancun-to-holbox"
+				>
+					<img
+						src="/public/post.jpg"
+						alt=""
+						slot="picture"
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Dignissimos, laborum?...
+					</p>
+				</PostCard>
+				<PostCard
+					title="Helicopter flight from Cancun to Holbox"
+					link="helicopter-flight-cancun-to-holbox"
+				>
+					<img
+						src="/public/post.jpg"
+						alt=""
+						slot="picture"
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Dignissimos, laborum?...
+					</p>
+				</PostCard>
+				<PostCard
+					title="Helicopter flight from Cancun to Holbox"
+					link="helicopter-flight-cancun-to-holbox"
+				>
+					<img
+						src="/public/post.jpg"
+						alt=""
+						slot="picture"
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Dignissimos, laborum?...
+					</p>
+				</PostCard>
+				<PostCard
+					title="Helicopter flight from Cancun to Holbox"
+					link="helicopter-flight-cancun-to-holbox"
+				>
+					<img
+						src="/public/post.jpg"
+						alt=""
+						slot="picture"
+						class="transition-all duration-300 group-hover:scale-[1.1]"
+					/>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Dignissimos, laborum?...
+					</p>
+				</PostCard>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		.overview {
+			background: url("/public/bg-pattern.svg") no-repeat center center;
+			background-size: cover;
+		}
+	</style>
+</Layout>

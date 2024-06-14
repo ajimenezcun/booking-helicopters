@@ -1,0 +1,64 @@
+---
+interface Props {
+    airport: string;
+    data: object;
+    info: object;
+    address: object;
+    link: string;
+}
+
+const { airport, data, info, address, link } = Astro.props;
+let url = `/airports/${link}`;
+---
+
+<article
+    class="group transition-all duration-300 border-2 border-gray-200 mb-5 p-5 hover:shadow-xl hover:translate-y-[-10px]"
+>
+    <a href={url}>
+        <h4 class="mb-3 group-hover:underline">
+            {airport}
+        </h4>
+        <div class="grid gap-5 grid-cols-1 lg:grid-cols-3">
+            <div>
+                <h5>Data</h5>
+                <div class="flex">
+                    <div class="w-1/3">
+                        <span class="block mb-2">IATA Code:</span>
+                        <span class="block mb-2">ICAO Code:</span>
+                        <span class="block mb-2">Area Code:</span>
+                        <span class="block">Inaguration:</span>
+                    </div>
+                    <div class="w-1/2">
+                        <b class="block mb-2">CUN</b>
+                        <b class="block mb-2">MMUN</b>
+                        <b class="block mb-2">148</b>
+                        <b class="block">1974</b>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Information</h5>
+                <div class="flex">
+                    <div class="w-1/3">
+                        <span class="block mb-2">Phone:</span>
+                        <span class="block mb-2">Operating:</span>
+                        <span class="block">GMT:</span>
+                    </div>
+                    <div class="w-1/2">
+                        <b class="block mb-2">+52 (998) 848 7200</b>
+                        <b class="block mb-2">24/7</b>
+                        <b class="block">-06:00 Hrs</b>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Address</h5>
+                <p class="mb-2">
+                    Carr. Cancun - Chetumal Km. 22 Cancún, Quintana Roo México
+                </p>
+                <p class="mb-2">Longitude: 86° 52' 37"</p>
+                <p>Latitude: 21° 2' 12"</p>
+            </div>
+        </div>
+    </a>
+</article>
