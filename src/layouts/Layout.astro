@@ -36,6 +36,13 @@ const { title, description, headerTheme = "solid" } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		color: #263351;
+	}
 	.mask-section {
 		position: absolute;
 		top: 0;
@@ -59,20 +66,18 @@ const { title, description, headerTheme = "solid" } = Astro.props;
 	}
 
 	.button-hire-nav {
-		background: black;
 		color: white;
 		padding: 15px 20px;
-		font-size: 16px;
 		font-weight: bold;
 	}
-	.solid .button-hire-nav {
+	/* .solid .button-hire-nav {
 		background: white;
 		color: black;
 	}
 	.solid .button-hire-nav:hover {
 		background: black;
 		color: white;
-	}
+	} */
 	.button-lang {
 		background: white;
 		color: black;

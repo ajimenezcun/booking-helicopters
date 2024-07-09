@@ -10,11 +10,15 @@ const { theme } = Astro.props;
     <section
         class="container relative flex flex-col gap-10 lg:justify-between lg:flex-row lg:w-10/12 lg:mx-auto xl:gap-20"
     >
-        <div class="flex gap-20">
-            <a href="/" title="Helicopter Flights in Cancun">brand-image</a>
+        <div>
+            <a href="/" title="Helicopter Flights in Cancun">
+                <img src="caribe-helicopters.png" class="w-[160px]" alt="" />
+            </a>
+        </div>
+        <div class="flex gap-20 items-center">
             <nav>
                 <ul
-                    class="flex flex-col lg:flex-row lg:justify-end lg:gap-7 font-bold text-lg"
+                    class="flex flex-col text-primary-950 font-bold font-josefin text-xl lg:flex-row lg:justify-end lg:gap-7"
                 >
                     <li><a href="/">Home</a></li>
                     <li><a href="/flights">Flights</a></li>
@@ -24,11 +28,9 @@ const { theme } = Astro.props;
                     <li><a href="/blog">Blog</a></li>
                 </ul>
             </nav>
-        </div>
-        <div>
             <a
                 href="#"
-                class="button-hire-nav transition-all duration-300 hover:bg-white hover:text-black"
+                class="button-hire-nav bg-cta-600 font-josefin transition-all duration-300 hover:bg-cta-700"
                 >Hire a Flight</a
             >
             <!-- <a

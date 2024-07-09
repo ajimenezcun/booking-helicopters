@@ -1,0 +1,22 @@
+---
+interface Props {
+    author: string;
+    title: string;
+    review: string;
+    rating: string;
+}
+
+const { author, title, review, rating } = Astro.props;
+---
+
+<article
+    class="transition-all duration-300 shadow-lg p-5 text-center border-2 border-second-200 hover:shadow-xl hover:border-cta-600"
+>
+    <span class="block text-lg text-cta-600">Jonh Sterling</span>
+    <b class="block mb-5">Great Experience</b>
+    <p class="text-md">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iste eum
+        voluptas saepe tenetur officiis non magni autem? Tenetur minus suscipit
+        tempora. Minus ipsa praesentium accusamus ut odio, perferendis delectus.
+    </p>
+</article>
