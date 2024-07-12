@@ -403,6 +403,51 @@ import ReviewCard from "../components/ReviewCard.astro";
 			/>
 		</div>
 
+		<div class="carousel-container mt-24">
+			<div class="carousel-track carousel-rl">
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+			</div>
+		</div>
+		<div class="carousel-container mt-10">
+			<div class="carousel-track carousel-lr">
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+				<div class="carousel-slide">
+					<img src="post.jpg" alt="" slot="picture" />
+				</div>
+			</div>
+		</div>
+
 		<h3 class="mt-20 mb-5">Helicopter Flights FAQs</h3>
 		<FaqCard
 			question="How safe is it really to travel in private and non-commercial helicopters?"
@@ -529,3 +574,64 @@ import ReviewCard from "../components/ReviewCard.astro";
 		}
 	</style>
 </Layout>
+
+<style>
+	.carousel-container {
+		width: 100%;
+		display: flex;
+		overflow: hidden;
+		position: relative;
+	}
+	.carousel-container::before,
+	.carousel-container::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 10%;
+		z-index: 2;
+	}
+	.carousel-container::before {
+		left: 0;
+		background: linear-gradient(to right, white, transparent);
+	}
+	.carousel-container::after {
+		right: 0;
+		background: linear-gradient(to left, white, transparent);
+	}
+	.carousel-track {
+		display: flex;
+		gap: 20px; /* Espacio entre imágenes */
+	}
+	.carousel-rl {
+		animation: leftScroll 10s linear infinite;
+	}
+	.carousel-lr {
+		animation: rightScroll 10s linear infinite;
+	}
+	.carousel-slide {
+		flex: 0 0 auto; /* Evita que las diapositivas se reduzcan o expandan */
+	}
+	.carousel-slide img {
+		width: 220px;
+		height: 180px;
+		display: block;
+		object-fit: cover;
+	}
+	@keyframes leftScroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-220px));
+		} /* Ajuste para tener en cuenta el gap */
+	}
+	@keyframes rightScroll {
+		0% {
+			transform: translateX(calc(-200px));
+		}
+		100% {
+			transform: translateX(0);
+		} /* Ajuste para tener en cuenta el gap */
+	}
+</style>
