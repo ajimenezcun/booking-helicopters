@@ -11,9 +11,11 @@ import ReviewCard from "../components/ReviewCard.astro";
 	description=""
 	headerTheme="transparent"
 >
-	<section class="flex lg:h-[600px] mb-10">
-		<div class="overview lg:w-3/5 lg:pl-14">
-			<h1 class="mt-[200px]">Helicopter Flights in Cancun</h1>
+	<section class="flex flex-col lg:h-[600px] mb-10">
+		<div class="overview p-5 lg:w-3/5 lg:pl-14">
+			<h1 class="mt-[100px] lg:mt-[200px]">
+				Helicopter Flights in Cancun
+			</h1>
 			<p class="text-lg mb-10">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
@@ -22,20 +24,20 @@ import ReviewCard from "../components/ReviewCard.astro";
 			</p>
 			<a
 				href=""
-				class="group bg-second-400 text-white py-4 px-7 text-lg font-bold flex w-fit items-center gap-3 justify-center transition-all duration-300 hover:bg-second-500 hover:shadow-xl"
+				class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-10/12 mx-auto mt-5 lg:w-fit items-center gap-3 justify-center transition-all duration-300 hover:bg-second-500 hover:shadow-xl"
 			>
 				<span>Hire a Flight</span>
 			</a>
 		</div>
-		<div class="bg-gray-50 lg:w-2/5">
+		<div class="bg-gray-50 p-5 lg:w-2/5">
 			<img
 				src="hero-helicopter.jpg"
 				alt=""
-				class="lg:h-[600px] object-cover"
+				class="-mt-[120px] z-10 lg:h-[600px] object-cover"
 			/>
 		</div>
 	</section>
-	<section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+	<section class="container mb-20 p-5 lg:w-10/12 lg:flex-row lg:mx-auto">
 		<h2 class="text-center">Helicopter Flight Services</h2>
 		<p class="text-center mb-10">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -147,11 +149,11 @@ import ReviewCard from "../components/ReviewCard.astro";
 			</article>
 		</div>
 
-		<div class="flex mt-24 gap-10">
-			<figure class="w-1/3">
+		<div class="flex flex-col mt-24 gap-10">
+			<figure class="hidden lg:w-1/3">
 				<img src="helicopter-figure.png" alt="" />
 			</figure>
-			<div class="w-2/3">
+			<div class="text-center lg:w-2/3">
 				<h3>About Caribe Helicopters</h3>
 				<p class="mb-5">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -175,6 +177,7 @@ import ReviewCard from "../components/ReviewCard.astro";
 							xmlns="http://www.w3.org/2000/svg"
 							width="32"
 							height="32"
+							class="mx-auto"
 							viewBox="0 0 24 24"
 							><path
 								fill="#CE6420"
@@ -195,6 +198,7 @@ import ReviewCard from "../components/ReviewCard.astro";
 							xmlns="http://www.w3.org/2000/svg"
 							width="32"
 							height="32"
+							class="mx-auto"
 							viewBox="0 0 28 28"
 							><path
 								fill="#CE6420"
@@ -215,6 +219,7 @@ import ReviewCard from "../components/ReviewCard.astro";
 							xmlns="http://www.w3.org/2000/svg"
 							width="32"
 							height="32"
+							class="mx-auto"
 							viewBox="0 0 24 24"
 							><path
 								fill="#CE6420"
@@ -235,6 +240,7 @@ import ReviewCard from "../components/ReviewCard.astro";
 							xmlns="http://www.w3.org/2000/svg"
 							width="32"
 							height="32"
+							class="mx-auto"
 							viewBox="0 0 21 24"
 							><path
 								fill="#CE6420"
@@ -298,7 +304,7 @@ import ReviewCard from "../components/ReviewCard.astro";
 	</section>
 
 	<section class="bg-second-100 py-10">
-		<div class="container lg:w-10/12 lg:flex-row lg:mx-auto">
+		<div class="container p-5 lg:w-10/12 lg:flex-row lg:mx-auto">
 			<h4 class="text-3xl text-center mb-5">
 				Are you looking for a unique experience?
 			</h4>
@@ -309,68 +315,25 @@ import ReviewCard from "../components/ReviewCard.astro";
 				unde repellat enim qui sint consectetur.
 			</p>
 
-			<div class="flex justify-center gap-10 mt-10">
+			<div class="flex flex-col lg:justify-center gap-5 mt-10">
 				<a
 					href="#"
-					class="bg-cta-600 text-white px-5 py-3 font-bold transition-all duration-300 hover:bg-cta-700 hover:shadow-xl"
+					class="bg-cta-600 text-white text-center py-5 font-bold transition-all duration-300 hover:bg-cta-700 hover:shadow-xl"
 					>Hire a Flight</a
 				>
 				<a
 					href="#"
-					class="border-2 border-cta-600 px-5 py-3 font-bold transition-all duration-300 hover:border-cta-700 hover:shadow-xl"
+					class="border-2 border-cta-600 text-center py-5 font-bold transition-all duration-300 hover:border-cta-700 hover:shadow-xl"
 					>Whatsapp</a
 				>
-				<a href="#" class="px-5 py-3 font-bold underline">Contact Us</a>
+				<a href="#" class="text-center py-5 font-bold underline"
+					>Contact Us</a
+				>
 			</div>
 		</div>
 	</section>
 
-	<!-- REVIEWS -->
-
-	<!-- SCROLL GALLERY -->
-
-	<!-- <section class="mb-20 bg-cta-600 py-10">
-		<div class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
-			<h2 class="text-center text-white">Caribe Airports</h2>
-			<p class="text-center mb-10">
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
-				vel! Facere corporis possimus velit quod, est tempora quidem
-				dolor earum nisi voluptatum? Dolorum totam, ex laborum
-				doloremque repudiandae in possimus!
-			</p>
-			<div class="grid grid-cols-1 gap-5 lg:grid-cols-4">
-				<AirportCard airport="Cancun Airport">
-					<img
-						src="airport-1.jpg"
-						alt=""
-						class="transition-all duration-300 group-hover:scale-[1.1]"
-					/>
-				</AirportCard>
-				<AirportCard airport="Cozumel Airport">
-					<img
-						src="airport-2.jpg"
-						alt=""
-						class="transition-all duration-300 group-hover:scale-[1.1]"
-					/>
-				</AirportCard>
-				<AirportCard airport="Holbox Airport">
-					<img
-						src="airport-1.jpg"
-						alt=""
-						class="transition-all duration-300 group-hover:scale-[1.1]"
-					/>
-				</AirportCard>
-				<AirportCard airport="Tulum Airport">
-					<img
-						src="airport-2.jpg"
-						alt=""
-						class="transition-all duration-300 group-hover:scale-[1.1]"
-					/>
-				</AirportCard>
-			</div>
-		</div>
-	</section> -->
-	<section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+	<section class="container mb-20 p-5 lg:w-10/12 lg:flex-row lg:mx-auto">
 		<h3 class="text-center mt-24">Helicopter Flights Reviews</h3>
 		<a href="#" class="block text-center mb-10 hover:underline"
 			>Disover all Reviews</a
