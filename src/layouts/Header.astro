@@ -76,7 +76,7 @@ const { theme } = Astro.props;
 
             if (header) {
                 const nav = document.querySelector("#nab");
-                const isClickInside = header.contains(event.target);
+                const isClickInside = header.contains(event.target as Node);
 
                 if (nav) {
                     if (
