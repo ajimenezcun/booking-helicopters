@@ -104,4 +104,18 @@ const { title, description, headerTheme = "solid" } = Astro.props;
 			border: 2px solid #e8e8e8;
 		}
 	}
+
+	.transition-transform {
+		transition:
+			transform 0.5s ease-in-out,
+			opacity 0.5s ease-in-out;
+	}
+	.translate-x-0 {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	.-translate-x-full {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
 </style>

@@ -6,7 +6,7 @@ interface Props {
 const { theme } = Astro.props;
 ---
 
-<header class:list={theme} class="py-5">
+<header class:list={theme} class="py-5" id="header">
     <section
         class="container relative flex flex-col px-5 lg:justify-between lg:flex-row lg:w-10/12 lg:mx-auto xl:gap-20"
     >
@@ -17,9 +17,10 @@ const { theme } = Astro.props;
 
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="36"
+                height="36"
                 class=""
+                id="navIcon"
                 viewBox="0 0 16 16"
                 ><path
                     fill="#000000"
@@ -29,7 +30,8 @@ const { theme } = Astro.props;
             >
         </div>
         <div
-            class="flex flex-col gap-10 h-screen fixed left-0 top-0 bg-cta-600 p-5 w-2/3 z-[9000] lg:gap-20 lg:items-center"
+            id="nab"
+            class="flex flex-col gap-10 h-screen fixed left-0 top-0 bg-cta-600 p-5 w-2/3 z-[9000] transition-transform transform -translate-x-full lg:gap-20 lg:items-center"
         >
             <nav>
                 <ul
@@ -45,9 +47,40 @@ const { theme } = Astro.props;
             </nav>
             <a
                 href="#"
-                class="bg-white text-second-950 py-5 text-center text-xl font-bold font-josefin transition-all duration-300 hover:bg-cta-700"
+                class="bg-white text-second-950 py-5 text-center text-xl font-bold font-josefin transition-all duration-300 hover:bg-second-950 hover:text-white"
                 >Hire a Flight</a
             >
         </div>
     </section>
 </header>
+
+<script>
+    const navIcon = document.getElementById("navIcon");
+    if (navIcon) {
+        navIcon.addEventListener("click", () => {
+            let nav = document.querySelector("#nab");
+
+            // nav.classList.toggle("hidden");
+
+            if (nav.classList.contains("-translate-x-full")) {
+                nav.classList.remove("-translate-x-full");
+                nav.classList.add("translate-x-0");
+            } else {
+                nav.classList.remove("translate-x-0");
+                nav.classList.add("-translate-x-full");
+            }
+        });
+
+        document.addEventListener("click", function (e) {
+            const header = document.querySelector("#header");
+            const nav = document.querySelector("#nab");
+            const isClickInside = header.contains(e.target);
+
+            console.log(isClickInside);
+            if (!isClickInside && nav.classList.contains("translate-x-0")) {
+                nav.classList.remove("translate-x-0");
+                nav.classList.add("-translate-x-full");
+            }
+        });
+    }
+</script>
