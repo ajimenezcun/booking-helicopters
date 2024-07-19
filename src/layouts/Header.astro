@@ -60,26 +60,33 @@ const { theme } = Astro.props;
         navIcon.addEventListener("click", () => {
             let nav = document.querySelector("#nab");
 
-            // nav.classList.toggle("hidden");
-
-            if (nav.classList.contains("-translate-x-full")) {
-                nav.classList.remove("-translate-x-full");
-                nav.classList.add("translate-x-0");
-            } else {
-                nav.classList.remove("translate-x-0");
-                nav.classList.add("-translate-x-full");
+            if (nav) {
+                if (nav.classList.contains("-translate-x-full")) {
+                    nav.classList.remove("-translate-x-full");
+                    nav.classList.add("translate-x-0");
+                } else {
+                    nav.classList.remove("translate-x-0");
+                    nav.classList.add("-translate-x-full");
+                }
             }
         });
 
-        document.addEventListener("click", function (e) {
+        document.addEventListener("click", function (event) {
             const header = document.querySelector("#header");
-            const nav = document.querySelector("#nab");
-            const isClickInside = header.contains(e.target);
 
-            console.log(isClickInside);
-            if (!isClickInside && nav.classList.contains("translate-x-0")) {
-                nav.classList.remove("translate-x-0");
-                nav.classList.add("-translate-x-full");
+            if (header) {
+                const nav = document.querySelector("#nab");
+                const isClickInside = header.contains(event.target);
+
+                if (nav) {
+                    if (
+                        !isClickInside &&
+                        nav.classList.contains("translate-x-0")
+                    ) {
+                        nav.classList.remove("translate-x-0");
+                        nav.classList.add("-translate-x-full");
+                    }
+                }
             }
         });
     }
