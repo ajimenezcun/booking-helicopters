@@ -8,17 +8,32 @@ const { theme } = Astro.props;
 
 <header class:list={theme} class="py-5">
     <section
-        class="container relative flex flex-col gap-10 lg:justify-between lg:flex-row lg:w-10/12 lg:mx-auto xl:gap-20"
+        class="container relative flex flex-col px-5 lg:justify-between lg:flex-row lg:w-10/12 lg:mx-auto xl:gap-20"
     >
-        <div>
+        <div class="flex justify-between items-center">
             <a href="/" title="Helicopter Flights in Cancun">
                 <img src="caribe-helicopters.png" class="w-[160px]" alt="" />
             </a>
+
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                class=""
+                viewBox="0 0 16 16"
+                ><path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75M2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8m6 4.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75"
+                    clip-rule="evenodd"></path></svg
+            >
         </div>
-        <div class="flex gap-20 items-center">
+        <div
+            class="flex flex-col gap-10 h-screen fixed left-0 top-0 bg-cta-600 p-5 w-2/3 z-[9000] lg:gap-20 lg:items-center"
+        >
             <nav>
                 <ul
-                    class="flex flex-col text-primary-950 font-bold font-josefin text-xl lg:flex-row lg:justify-end lg:gap-7"
+                    class="flex flex-col gap-5 text-white font-bold font-josefin text-xl lg:text-primary-950 lg:flex-row lg:justify-end lg:gap-7"
                 >
                     <li><a href="/">Home</a></li>
                     <li><a href="/flights">Flights</a></li>
@@ -30,14 +45,9 @@ const { theme } = Astro.props;
             </nav>
             <a
                 href="#"
-                class="button-hire-nav bg-cta-600 font-josefin transition-all duration-300 hover:bg-cta-700"
+                class="bg-white text-second-950 py-5 text-center text-xl font-bold font-josefin transition-all duration-300 hover:bg-cta-700"
                 >Hire a Flight</a
             >
-            <!-- <a
-                href="#"
-                class="button-lang transition-all duration-300 hover:bg-gray-300"
-                >ES</a
-            > -->
         </div>
     </section>
 </header>
