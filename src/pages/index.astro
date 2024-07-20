@@ -11,7 +11,7 @@ import ReviewCard from "../components/ReviewCard.astro";
 	description=""
 	headerTheme="transparent"
 >
-	<section class="flex flex-col lg:h-[600px] mb-10">
+	<section class="flex flex-col lg:flex-row lg:h-[600px] mb-10">
 		<div class="overview p-5 lg:w-3/5 lg:pl-14">
 			<h1 class="mt-[100px] lg:mt-[200px]">
 				Helicopter Flights in Cancun
@@ -24,16 +24,16 @@ import ReviewCard from "../components/ReviewCard.astro";
 			</p>
 			<a
 				href=""
-				class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-10/12 mx-auto mt-5 lg:w-fit items-center gap-3 justify-center transition-all duration-300 hover:bg-second-500 hover:shadow-xl"
+				class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-10/12 mx-auto mt-5 items-center gap-3 justify-center transition-all duration-300 hover:bg-second-500 hover:shadow-xl lg:w-fit lg:m-0"
 			>
 				<span>Hire a Flight</span>
 			</a>
 		</div>
-		<div class="bg-gray-50 p-5 lg:w-2/5">
+		<div class="bg-gray-50 p-5 lg:p-0 lg:w-2/5">
 			<img
 				src="hero-helicopter.jpg"
 				alt=""
-				class="-mt-[120px] z-10 lg:h-[600px] object-cover"
+				class="-mt-[120px] z-10 lg:mt-0 lg:h-[600px] object-cover"
 			/>
 		</div>
 	</section>
@@ -149,8 +149,8 @@ import ReviewCard from "../components/ReviewCard.astro";
 			</article>
 		</div>
 
-		<div class="flex flex-col mt-24 gap-10">
-			<figure class="hidden lg:w-1/3">
+		<div class="flex flex-col mt-24 gap-10 lg:flex-row">
+			<figure class="hidden lg:block lg:w-1/3">
 				<img src="helicopter-figure.png" alt="" />
 			</figure>
 			<div class="text-center lg:w-2/3">
@@ -317,18 +317,22 @@ import ReviewCard from "../components/ReviewCard.astro";
 				unde repellat enim qui sint consectetur.
 			</p>
 
-			<div class="flex flex-col lg:justify-center gap-5 mt-10">
+			<div
+				class="flex flex-col gap-5 mt-10 lg:justify-center lg:flex-row"
+			>
 				<a
 					href="#"
-					class="bg-cta-600 text-white text-center py-5 font-bold transition-all duration-300 hover:bg-cta-700 hover:shadow-xl"
+					class="bg-cta-600 text-white text-center py-5 font-bold transition-all duration-300 hover:bg-cta-700 hover:shadow-xl lg:py-3 lg:px-5"
 					>Hire a Flight</a
 				>
 				<a
 					href="#"
-					class="border-2 border-cta-600 text-center py-5 font-bold transition-all duration-300 hover:border-cta-700 hover:shadow-xl"
+					class="border-2 border-cta-600 text-center py-5 font-bold transition-all duration-300 hover:border-cta-700 hover:shadow-xl lg:py-3 lg:px-5"
 					>Whatsapp</a
 				>
-				<a href="#" class="text-center py-5 font-bold underline"
+				<a
+					href="#"
+					class="text-center py-5 font-bold underline lg:py-3 lg:px-5"
 					>Contact Us</a
 				>
 			</div>

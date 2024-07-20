@@ -118,4 +118,11 @@ const { title, description, headerTheme = "solid" } = Astro.props;
 		transform: translateX(-100%);
 		opacity: 0;
 	}
+	@media (min-width: 1024px) {
+		#nab {
+			transform: none;
+			opacity: 1;
+			display: flex !important;
+		}
+	}
 </style>
