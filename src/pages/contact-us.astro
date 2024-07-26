@@ -8,9 +8,11 @@ import FaqCard from "../components/FaqCard.astro";
     description=""
     headerTheme="solid"
 >
-    <section class="mb-20 relative py-20 bg-gray-100">
+    <section class="px-5 mb-20 relative py-20 bg-gray-100 lg:px-5">
         <article class="lg:w-10/12 lg:mx-auto">
-            <h1>Helicopter Flights Contact</h1>
+            <h1>
+                Helicopter Flights <span class="text-cta-600">Contact</span>
+            </h1>
             <p class="text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
@@ -20,15 +22,17 @@ import FaqCard from "../components/FaqCard.astro";
         </article>
     </section>
 
-    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
+    <section
+        class="container px-5 mb-20 lg:w-10/12 lg:flex-row lg:mx-auto lg:px-0"
+    >
         <div class="grid grid-cols-2 gap-5 lg:grid-cols-4">
             <article class="group">
                 <h4>Call Us</h4>
-                <p>+(52) 998 223 5933</p>
+                <p>+(52) 998 113 5966</p>
             </article>
             <article class="group">
                 <h4>Whatsapp</h4>
-                <p>+(52) 998 223 5933</p>
+                <p>+(52) 998 113 5966</p>
             </article>
             <article class="group">
                 <h4>Write us</h4>
@@ -40,81 +44,53 @@ import FaqCard from "../components/FaqCard.astro";
             </article>
         </div>
 
-        <div class="grid gap-5 grid-cols-1 lg:grid-cols-2 mt-20">
-            <div>
-                <form action="">
-                    <div class="fieldbox">
-                        <label for="">Full name</label>
-                        <input type="text" />
-                    </div>
-                    <div class="fieldbox">
-                        <label for="">Email</label>
-                        <input type="text" />
-                    </div>
-                    <div class="fieldbox">
-                        <label for="">Phone number</label>
-                        <input type="text" />
-                    </div>
-                    <div class="fieldbox">
-                        <label for="">What help do you need?</label>
-                        <select name="" id="">
-                            <option value="Information"
-                                >General Information</option
-                            >
-                            <option value="Flights">Helicopter Flights</option>
-                            <option value="Overflights"
-                                >Helicopter Overflights</option
-                            >
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div class="fieldbox">
-                        <label for="">Message</label>
-                        <textarea name="" id=""></textarea>
-                    </div>
-                    <div>
-                        <button
-                            class="bg-black text-white py-3 px-7 transition-all duration-300 hover:shadow-xl"
-                            >CONTACT US</button
-                        >
-                    </div>
-                </form>
-            </div>
-            <div>
-                <h5 class="mb-5">Why choose Caribe Helicopters</h5>
-                <div class="grid grid-cols-1 gap-5 mb-10">
-                    <article
-                        class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
-                    >
-                        <b class="block mb-3">We are Safety</b>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Numquam vitae excepturi quia optio vel
-                            asperiores.
-                        </p>
-                    </article>
-                    <article
-                        class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
-                    >
-                        <b class="block mb-3">Providing Quality</b>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Numquam vitae excepturi quia optio vel
-                            asperiores.
-                        </p>
-                    </article>
-                    <article
-                        class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
-                    >
-                        <b class="block mb-3">Quick and easy</b>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Numquam vitae excepturi quia optio vel
-                            asperiores.
-                        </p>
-                    </article>
+        <div class="mt-24">
+            <h2 class="lg:text-center">How can we help you today?</h2>
+            <p class="mb-10 lg:text-center">
+                Like you, we want you to live the wonderful experience of flying
+                in helicopter over the fascinating Mexican Caribbean Sea, so
+                let's solve all your doubts.
+            </p>
+            <form
+                class="flex flex-col gap-y-5 p-0 lg:flex-wrap lg:justify-between lg:flex-row"
+            >
+                <div class="fieldbox lg:px-5 lg:w-1/2">
+                    <label for="">Full name</label>
+                    <input type="text" />
                 </div>
-            </div>
+                <div class="fieldbox lg:px-5 lg:w-1/2">
+                    <label for="">Email</label>
+                    <input type="text" />
+                </div>
+                <div class="fieldbox lg:px-5 lg:w-1/2">
+                    <label for="">Phone number</label>
+                    <input type="text" />
+                </div>
+                <div class="fieldbox lg:px-5 lg:w-1/2">
+                    <label for="">What help do you need?</label>
+                    <select name="" id="">
+                        <option value="Information">General Information</option>
+                        <option value="Flights">Helicopter Flights</option>
+                        <option value="Overflights"
+                            >Helicopter Overflights</option
+                        >
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="fieldbox lg:px-5 lg:w-full">
+                    <label for="">Message</label>
+                    <textarea name="" id="" rows="4"></textarea>
+                </div>
+                <div class="lg:px-5 lg:w-full">
+                    <button
+                        href="#sec-experiences"
+                        class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-full mx-auto mt-5 items-center gap-3 justify-center transition-all duration-300 hover:bg-second-950 hover:text-white hover:shadow-xl lg:w-fit lg:m-0"
+                    >
+                        <span>Contact us</span>
+                        <img src="svg/arrow-next-white.svg" width="20" alt="" />
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
 </Layout>

@@ -1,7 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TablePricing from "../components/TablePricing.astro";
-import AirportCard from "../components/AirportCard.astro";
 ---
 
 <Layout
@@ -9,164 +7,73 @@ import AirportCard from "../components/AirportCard.astro";
     description=""
     headerTheme="transparent"
 >
-    <section class="flex lg:h-[600px] mb-10">
-        <div class="overview lg:w-3/5 lg:pl-14">
-            <h1 class="mt-[200px]">
+    <section class="flex flex-col lg:flex-row lg:h-[600px] mb-10">
+        <div class="overview p-5 lg:w-3/5 lg:pl-14">
+            <h1 class="mt-[100px] lg:mt-[200px]">
                 Overflights in <span class="text-cta-600">Helicopter</span>
             </h1>
             <p class="text-lg mb-10">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
                 nesciunt aperiam accusantium asperiores consectetur tenetur
+                harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
+                nesciunt aperiam accusantium asperiores consectetur tenetur
                 harum.
             </p>
             <a
-                href=""
-                class="group bg-black text-white py-4 px-7 text-lg font-bold flex w-fit items-center gap-3 justify-center transition-all duration-300 hover:bg-white hover:text-black hover:shadow-xl"
+                href="#sec-experiences"
+                class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-10/12 mx-auto mt-5 items-center gap-3 justify-center transition-all duration-300 hover:bg-second-950 hover:text-white hover:shadow-xl lg:w-fit lg:m-0"
             >
-                <span>Hire a Flight</span>
+                <span>Explore Experiences</span>
+                <img src="svg/arrow-next-white.svg" width="20" alt="" />
             </a>
         </div>
-        <div class="bg-gray-50 lg:w-2/5">
-            <img src="demo.png" alt="" class="lg:h-[600px] object-cover" />
+        <div class="bg-gray-50 p-5 lg:p-0 lg:w-2/5">
+            <img
+                src="hero-helicopter.jpg"
+                alt=""
+                class="-mt-[120px] z-10 lg:mt-0 lg:h-[600px] object-cover"
+            />
         </div>
     </section>
-    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
-        <div class="flex flex-col gap-5 lg:flex-row lg:justify-between">
-            <article class="w-2/3">
-                <h2>About Helicopter Overflights</h2>
-                <p class="mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda minima necessitatibus repudiandae modi sit
-                    corporis maxime perferendis ipsum sapiente deserunt.
-                    Temporibus molestiae voluptatibus soluta! Eveniet vel
-                    mollitia facere a consequuntur?. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Modi sapiente aspernatur,
-                    nihil maiores error ab libero omnis aliquam pariatur nostrum
-                    illum consequuntur quod ipsum voluptas quibusdam debitis
-                    doloremque sint labore.
-                </p>
-                <p class="mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Consequatur, voluptates. Expedita, quam, repellat aspernatur
-                    hic quasi distinctio officia, totam doloremque iure
-                    recusandae in illo optio incidunt molestias impedit dicta
-                    amet!
-                </p>
-                <p class="mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quia, quis! Dolore tempore assumenda iste sed deserunt
-                    voluptas expedita repudiandae reprehenderit, eius obcaecati!
-                    Repellat, odit? Reiciendis voluptatum omnis rerum aperiam
-                    placeat.
-                </p>
+
+    <section
+        class="container mb-20 p-5 flex lg:w-10/12 lg:flex-row lg:gap-5 lg:mx-auto"
+    >
+        <div class="lg:w-3/4" id="sec-experiences">
+            <h2>The best Helicopter Overflight Experiences</h2>
+            <p class="mb-10">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, deserunt odio. Incidunt, possimus aspernatur
+                numquam quae libero velit, odio, quo nihil et quidem quasi ipsam
+                porro nostrum. Explicabo, atque quam?
+            </p>
+
+            <article class="flex flex-col lg:flex-row lg:gap-5">
+                <img src="post.jpg" alt="" class="lg:w-1/3" />
+                <div>
+                    <h3>Panoramic Flight in Cancun</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Natus tenetur nobis voluptates aut, cupiditate
+                        ipsa sapiente fugit a blanditiis reprehenderit quas.
+                        Quod ad dolorem architecto dicta, eaque vel excepturi
+                        accusantium...
+                    </p>
+
+                    <span>Time duration</span>
+                    <span>Guests capacity</span>
+
+                    <b>500<small>USD</small></b>
+                </div>
             </article>
-            <div class="w-1/3">
-                <h3 class="mb-5">Overflights Places</h3>
-                <div class="mb-3">
-                    <a
-                        href="#"
-                        class="flex items-center gap-3 block bg-gray-100 p-5 border-l-2 border-l-gray-300 transition-all duration-300 hover:translate-x-2 hover:border-l-blue-400"
-                    >
-                        <img
-                            src="/svg/helicopter.svg"
-                            alt=""
-                            width="24"
-                            height="24"
-                        />
-                        <span>Cancun Airport</span>
-                    </a>
-                </div>
-                <div class="mb-3">
-                    <a
-                        href="#"
-                        class="flex items-center gap-3 block bg-gray-100 p-5 border-l-2 border-l-gray-300 transition-all duration-300 hover:translate-x-2 hover:border-l-blue-400"
-                    >
-                        <img
-                            src="/svg/helicopter.svg"
-                            alt=""
-                            width="24"
-                            height="24"
-                        />
-                        <span>Playa del Carmen Airport</span>
-                    </a>
-                </div>
-                <div class="mb-3">
-                    <a
-                        href="#"
-                        class="flex items-center gap-3 block bg-gray-100 p-5 border-l-2 border-l-gray-300 transition-all duration-300 hover:translate-x-2 hover:border-l-blue-400"
-                    >
-                        <img
-                            src="/svg/helicopter.svg"
-                            alt=""
-                            width="24"
-                            height="24"
-                        />
-                        <span>Cozumel Airport</span>
-                    </a>
-                </div>
-                <div class="mb-3">
-                    <a
-                        href="#"
-                        class="flex items-center gap-3 block bg-gray-100 p-5 border-l-2 border-l-gray-300 transition-all duration-300 hover:translate-x-2 hover:border-l-blue-400"
-                    >
-                        <img
-                            src="/svg/helicopter.svg"
-                            alt=""
-                            width="24"
-                            height="24"
-                        />
-                        <span>Holbox Airport</span>
-                    </a>
-                </div>
-            </div>
+        </div>
+        <div class="lg:w-1/4">
+            <b>Do you need help?</b>
         </div>
     </section>
 
-    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
-        <h2 class="text-center">The best places</h2>
-        <p class="text-center mb-10">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, vel!
-            Facere corporis possimus velit quod, est tempora quidem dolor earum
-            nisi voluptatum? Dolorum totam, ex laborum doloremque repudiandae in
-            possimus!
-        </p>
-        <div class="grid grid-cols-1 gap-5 lg:grid-cols-4">
-            <AirportCard airport="Cancun">
-                <img
-                    src="airport-1.jpg"
-                    alt=""
-                    class="transition-all duration-300 group-hover:scale-[1.1]"
-                />
-            </AirportCard>
-            <AirportCard airport="Cozumel">
-                <img
-                    src="airport-2.jpg"
-                    alt=""
-                    class="transition-all duration-300 group-hover:scale-[1.1]"
-                />
-            </AirportCard>
-            <AirportCard airport="Holbox">
-                <img
-                    src="airport-1.jpg"
-                    alt=""
-                    class="transition-all duration-300 group-hover:scale-[1.1]"
-                />
-            </AirportCard>
-            <AirportCard airport="Chichen Itza">
-                <img
-                    src="airport-2.jpg"
-                    alt=""
-                    class="transition-all duration-300 group-hover:scale-[1.1]"
-                />
-            </AirportCard>
-        </div>
-
-        <h3 class="block mt-20 mb-5 text-center">
-            Helicopter Overflights Pricing
-        </h3>
-        <TablePricing />
-    </section>
     <style>
         .overview {
             background: url("/public/bg-pattern.svg") no-repeat center center;
