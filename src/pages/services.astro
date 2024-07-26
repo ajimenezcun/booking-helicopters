@@ -8,13 +8,11 @@ import FaqCard from "../components/FaqCard.astro";
     description=""
     headerTheme="solid"
 >
-    <section
-        class="mb-20 bg-[url('/public/bg-section.jpg')] bg-no-repeat bg-cover bg-center bg-fixed relative py-20"
-    >
-        <article
-            class="text-center relative z-[200] text-white lg:w-10/12 lg:mx-auto"
-        >
-            <h1>Helicopter Flights Services in Cancun</h1>
+    <section class="px-5 mb-20 relative py-20 bg-gray-100 lg:px-5">
+        <article class="lg:text-center lg:w-10/12 lg:mx-auto">
+            <h1>
+                Helicopter Flights <span class="text-cta-600">Services</span>
+            </h1>
             <p class="text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
@@ -22,128 +20,184 @@ import FaqCard from "../components/FaqCard.astro";
                 harum.
             </p>
         </article>
-        <div class="mask-section"></div>
     </section>
 
-    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
-        <h2 class="text-center">Helicopter Flight Services</h2>
-        <p class="text-center mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            minima necessitatibus repudiandae modi sit corporis maxime
-            perferendis ipsum sapiente deserunt. Temporibus molestiae
-            voluptatibus soluta! Eveniet vel mollitia facere a consequuntur?
+    <section class="container mb-20 px-5 lg:w-10/12 lg:flex-row lg:mx-auto">
+        <h2 class="lg:text-center">The best Helicopter Services</h2>
+        <p class="mb-24 lg:text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            eligendi, saepe a dicta illum fugit illo in voluptas tempora ut
+            doloribus autem perferendis quaerat quam fuga facere? Ducimus, vero
+            molestias.
         </p>
 
-        <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
-            <article class="group">
-                <a href="/flights" title="Helicopter Flights in Cancun">
-                    <div class="relative overflow-hidden">
-                        <img
-                            src="overflights.jpg"
-                            alt=""
-                            class="transition-all duration-300 group-hover:scale-[1.1]"
-                        />
-                        <div
-                            class="absolute left-0 bottom-0 w-full py-2 pl-5 bg-gradient-to-t from-black to-transparent"
-                        >
-                            <h3
-                                class="text-white transition-all duration-300 group-hover:underline"
-                            >
-                                Helicopter Flights
-                            </h3>
-                        </div>
-                    </div>
-                </a>
-                <p class="mt-5">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quis voluptas vero ipsam repudiandae blanditiis aliquam
-                    temporibus pariatur, possimus molestias accusamus totam
-                    unde, velit hic corrupti saepe veritatis, quidem recusandae
-                    nulla?
+        <!-- Tours in Helicopter -->
+        <div class="flex flex-col mb-10 lg:mb-24 lg:flex-row">
+            <a
+                href="/helicopter-transfers"
+                title="Helicopter Flights in Cancun"
+                class="lg:w-1/2"
+            >
+                <img src="overflights.jpg" alt="" />
+            </a>
+            <article class="py-5 lg:p-5 lg:w-1/2">
+                <b class="text-cta-600 font-bold lg:text-xl"
+                    >Fascinating experience through the skies</b
+                >
+                <h3 class="block mb-3">Tours in Helicopter</h3>
+                <p class="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis at nobis vero molestias dignissimos ipsa iure?
+                    Debitis facere, laboriosam numquam quam perspiciatis unde,
+                    doloremque aliquid ea, praesentium illo nam incidunt!
                 </p>
-            </article>
-            <article class="relative group overflow-hidden">
-                <div class="relative overflow-hidden">
+                <ul class="mb-10 grid grid-cols-1 gap-y-3 lg:grid-cols-2">
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Move directly and smoothly.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Enjoy the best views of the Caribbean.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Ideal for up to 6 passengers.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Return to your hotel on time.</span>
+                    </li>
+                </ul>
+
+                <div class="flex flex-col lg:gap-x-5 lg:flex-row">
                     <a
-                        href="/overflights"
-                        title="Cancun Overflights in Helicopter"
+                        href="helicopter-transfers"
+                        class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-full mx-auto mt-5 items-center gap-3 justify-center transition-all duration-300 hover:bg-second-950 hover:text-white hover:shadow-xl lg:w-fit lg:m-0"
                     >
-                        <img
-                            src="helicopter-flights.jpg"
-                            alt=""
-                            class="transition-all duration-300 group-hover:scale-[1.1]"
-                        />
-                        <div
-                            class="absolute left-0 bottom-0 w-full py-2 pl-5 bg-gradient-to-t from-black to-transparent"
-                        >
-                            <h3
-                                class="text-white transition-all duration-300 group-hover:underline"
-                            >
-                                Helicopter Overflights
-                            </h3>
-                        </div>
+                        <span>Explore</span>
+                        <img src="svg/arrow-next-white.svg" width="20" alt="" />
                     </a>
+                    <div
+                        class="mt-5 text-center lg:leading-3 lg:text-left lg:mt-0"
+                    >
+                        <b class="text-2xl block">500<small>USD</small></b>
+                        <span>From</span>
+                    </div>
                 </div>
-                <p class="mt-5">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quis voluptas vero ipsam repudiandae blanditiis aliquam
-                    temporibus pariatur, possimus molestias accusamus totam
-                    unde, velit hic corrupti saepe veritatis, quidem recusandae
-                    nulla?
-                </p>
             </article>
         </div>
 
-        <h3 class="mt-20 mb-5">Helicopter Flights Services FAQs</h3>
-        <FaqCard
-            question="How safe is it really to travel in private and non-commercial helicopters?"
-        >
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Adipisci saepe eum, iure quam, provident voluptatum asperiores
-                veritatis rerum quibusdam maxime ipsam amet quisquam optio
-                tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
-            </p>
-        </FaqCard>
-        <FaqCard
-            question="How safe is it really to travel in private and non-commercial helicopters?"
-        >
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Adipisci saepe eum, iure quam, provident voluptatum asperiores
-                veritatis rerum quibusdam maxime ipsam amet quisquam optio
-                tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
-            </p>
-        </FaqCard>
-        <FaqCard
-            question="How safe is it really to travel in private and non-commercial helicopters?"
-        >
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Adipisci saepe eum, iure quam, provident voluptatum asperiores
-                veritatis rerum quibusdam maxime ipsam amet quisquam optio
-                tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
-            </p>
-        </FaqCard>
-        <FaqCard
-            question="How safe is it really to travel in private and non-commercial helicopters?"
-        >
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Adipisci saepe eum, iure quam, provident voluptatum asperiores
-                veritatis rerum quibusdam maxime ipsam amet quisquam optio
-                tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
-            </p>
-        </FaqCard>
-        <FaqCard
-            question="How safe is it really to travel in private and non-commercial helicopters?"
-        >
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Adipisci saepe eum, iure quam, provident voluptatum asperiores
-                veritatis rerum quibusdam maxime ipsam amet quisquam optio
-                tempore ex, sapiente ullam consequuntur <b>reiciendis.</b>
-            </p>
-        </FaqCard>
+        <!-- Helicopter Overflights -->
+        <div class="flex flex-col mb-24 lg:flex-row">
+            <article class="py-5 order-2 lg:p-5 lg:w-1/2 lg:order-1">
+                <b class="text-cta-600 font-bold lg:text-xl"
+                    >Beautiful panoramic views of major cities</b
+                >
+                <h3 class="block mb-3">Helicopter Overflights</h3>
+                <p class="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis at nobis vero molestias dignissimos ipsa iure?
+                    Debitis facere, laboriosam numquam quam perspiciatis unde,
+                    doloremque aliquid ea, praesentium illo nam incidunt!
+                </p>
+                <ul class="mb-10 grid grid-cols-1 gap-y-3 lg:grid-cols-2">
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Move directly and smoothly.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Enjoy the best views of the Caribbean.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Ideal for up to 6 passengers.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Return to your hotel on time.</span>
+                    </li>
+                </ul>
+                <div class="flex flex-col lg:gap-x-5 lg:flex-row">
+                    <a
+                        href="helicopter-transfers"
+                        class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-full mx-auto mt-5 items-center gap-3 justify-center transition-all duration-300 hover:bg-second-950 hover:text-white hover:shadow-xl lg:w-fit lg:m-0"
+                    >
+                        <span>Explore</span>
+                        <img src="svg/arrow-next-white.svg" width="20" alt="" />
+                    </a>
+                    <div
+                        class="mt-5 text-center lg:leading-3 lg:text-left lg:mt-0"
+                    >
+                        <b class="text-2xl block">500<small>USD</small></b>
+                        <span>From</span>
+                    </div>
+                </div>
+            </article>
+            <a
+                href="/helicopter-transfers"
+                title="Helicopter Flights in Cancun"
+                class="order-1 lg:w-1/2 lg:order-2"
+            >
+                <img src="overflights.jpg" alt="" />
+            </a>
+        </div>
+
+        <!-- Helicopter Transfers -->
+        <div class="flex flex-col mb-24 lg:flex-row">
+            <a
+                href="/helicopter-transfers"
+                title="Helicopter Flights in Cancun"
+                class="lg:w-1/2"
+            >
+                <img src="overflights.jpg" alt="" />
+            </a>
+            <article class="py-5 lg:p-5 lg:w-1/2">
+                <b class="text-cta-600 font-bold lg:text-xl"
+                    >Travel in style in the Caribbean</b
+                >
+                <h3 class="block mb-3">Helicopter Transfers</h3>
+                <p class="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis at nobis vero molestias dignissimos ipsa iure?
+                    Debitis facere, laboriosam numquam quam perspiciatis unde,
+                    doloremque aliquid ea, praesentium illo nam incidunt!
+                </p>
+                <ul class="mb-10 grid grid-cols-1 gap-y-3 lg:grid-cols-2">
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Move directly and smoothly.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Enjoy the best views of the Caribbean.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Ideal for up to 6 passengers.</span>
+                    </li>
+                    <li class="flex gap-1 text-sm">
+                        <img src="svg/check-cta.svg" width="18" />
+                        <span>Return to your hotel on time.</span>
+                    </li>
+                </ul>
+                <div class="flex flex-col lg:gap-x-5 lg:flex-row">
+                    <a
+                        href="helicopter-transfers"
+                        class="bg-cta-600 text-white relative py-4 px-7 text-lg font-bold flex z-20 w-full mx-auto mt-5 items-center gap-3 justify-center transition-all duration-300 hover:bg-second-950 hover:text-white hover:shadow-xl lg:w-fit lg:m-0"
+                    >
+                        <span>Explore</span>
+                        <img src="svg/arrow-next-white.svg" width="20" alt="" />
+                    </a>
+                    <div
+                        class="mt-5 text-center lg:leading-3 lg:text-left lg:mt-0"
+                    >
+                        <b class="text-2xl block">500<small>USD</small></b>
+                        <span>From</span>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
 </Layout>
