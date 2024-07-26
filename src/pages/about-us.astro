@@ -8,13 +8,11 @@ import FleetCard from "../components/FleetCard.astro";
     description=""
     headerTheme="solid"
 >
-    <section
-        class="mb-20 bg-[url('/public/bg-section.jpg')] bg-no-repeat bg-cover bg-center bg-fixed relative py-20"
-    >
-        <article
-            class="text-center relative z-[200] text-white lg:w-10/12 lg:mx-auto"
-        >
-            <h1>About Caribe Helicopters</h1>
+    <section class="px-5 mb-20 relative py-20 bg-gray-100 lg:px-5">
+        <article class="lg:w-10/12 lg:mx-auto">
+            <h1>
+                About <span class="text-cta-600">Caribe Helicopter</span>
+            </h1>
             <p class="text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
@@ -22,78 +20,12 @@ import FleetCard from "../components/FleetCard.astro";
                 harum.
             </p>
         </article>
-        <div class="mask-section"></div>
     </section>
 
-    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
-        <h3 class="mb-10 text-center">Why choose us?</h3>
-        <div class="grid grid-cols-1 gap-5 mb-10 lg:grid-cols-3">
-            <article
-                class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="48"
-                    height="48"
-                    viewBox="0 0 24 24"
-                    ><g fill="none" fill-rule="evenodd"
-                        ><path
-                            d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
-                        ></path><path
-                            fill="#999999"
-                            d="M11.298 2.195a2 2 0 0 1 1.232-.055l.172.055l7 2.625a2 2 0 0 1 1.291 1.708l.007.165v5.363a9 9 0 0 1-4.709 7.911l-.266.139l-3.354 1.677a1.5 1.5 0 0 1-1.198.062l-.144-.062l-3.354-1.677a9 9 0 0 1-4.97-7.75l-.005-.3V6.693a2 2 0 0 1 1.145-1.808l.153-.065zm4.135 6.434l-4.598 4.598l-1.768-1.768a1 1 0 0 0-1.414 1.415l2.404 2.404a1.1 1.1 0 0 0 1.556 0l5.234-5.235a1 1 0 1 0-1.414-1.414"
-                        ></path></g
-                    ></svg
-                >
-                <h4 class="mt-5">We are Safety</h4>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Numquam vitae excepturi quia optio vel asperiores.
-                </p>
-            </article>
-            <article
-                class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="48"
-                    height="48"
-                    viewBox="0 0 24 24"
-                    ><path
-                        fill="#999999"
-                        d="M18 3a1 1 0 0 1 .832.445l.062.108l3 6a1 1 0 0 1-.067 1.01l-.084.106l-8.973 9.973a.99.99 0 0 1-.886.351l-.113-.019a.98.98 0 0 1-.532-.322L2.257 10.67a1 1 0 0 1-.204-.991l.053-.125l3-6a1 1 0 0 1 .77-.545L6 3zm-3.424 8H9.423L12 17.342zm4.177 0h-2.018l-1.661 4.088zM7.264 11H5.246l3.678 4.087zm1.358-6H6.618l-2 4h2.704zm4.651 0h-2.547L9.427 9h5.145zm4.108 0h-2.004l1.3 4h2.704z"
-                    ></path></svg
-                >
-                <h4 class="mt-5">Providing Quality</h4>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Numquam vitae excepturi quia optio vel asperiores.
-                </p>
-            </article>
-            <article
-                class="bg-gray-50 p-5 shadow-sm transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:translate-y-[-10px]"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="48"
-                    height="48"
-                    viewBox="0 0 24 24"
-                    ><path
-                        fill="#999999"
-                        d="M13 9V1.07c3.94.49 7 3.85 7 7.93zM6.34 20.66A8 8 0 0 1 4 15v-4h16v4c0 2.12-.84 4.16-2.34 5.66A8 8 0 0 1 12 23c-2.12 0-4.16-.84-5.66-2.34M11 9V1.07A8.01 8.01 0 0 0 4.25 7C4.09 7.64 4 8.31 4 9zM6.34 7C6.82 5.65 7.78 4.5 9 3.81V7z"
-                    ></path></svg
-                >
-                <h4 class="mt-5">Quick and easy</h4>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Numquam vitae excepturi quia optio vel asperiores.
-                </p>
-            </article>
-        </div>
-
-        <div class="flex gap-5 mt-20">
-            <article class="w-2/3">
-                <h2>Caribe Helicopters</h2>
+    <section class="container mb-20 px-5 lg:w-10/12 lg:flex-row lg:mx-auto">
+        <div class="flex flex-col gap-5 mt-20 lg:flex-row">
+            <article class="lg:w-2/3">
+                <h2>Caribe Helicopter</h2>
                 <p class="text-lg mb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Soluta, quaerat vitae ullam sint dicta ducimus quae eaque
@@ -121,13 +53,95 @@ import FleetCard from "../components/FleetCard.astro";
                     tempora maxime laborum quia, cumque fugiat nesciunt.
                 </p>
             </article>
-            <picture class="w-1/3">
-                <img
-                    src="airport-1.jpg"
-                    alt=""
-                    class="w-full h-[80%] object-cover"
-                />
+            <picture class="lg:w-1/3">
+                <img src="airport-1.jpg" alt="" class="w-full object-cover" />
             </picture>
+        </div>
+
+        <h3 class="mb-10 text-center mt-24">Why choose us?</h3>
+        <div
+            class="grid grid-cols-1 gap-5 mb-10 text-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
+        >
+            <article
+                class="border-2 border-cta-600 p-5 shadow-sm transition-all duration-300 hover:shadow-xl"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    class="mx-auto"
+                    viewBox="0 0 24 24"
+                    ><path
+                        fill="#CE6420"
+                        d="m12 .44l10 3.5V12c0 4.127-2.533 7.012-4.896 8.803a19.7 19.7 0 0 1-4.65 2.595l-.087.033l-.025.009l-.007.002l-.003.001c-.001 0-.002 0-.332-.943l-.331.944h-.001l-.003-.002l-.007-.002l-.025-.01l-.087-.032a18 18 0 0 1-1.39-.606a20 20 0 0 1-3.26-1.989C4.534 19.012 2 16.127 2 12V3.94zm0 22.06l-.331.944l.331.116l.331-.116zm0-1.072l.009-.004a17.8 17.8 0 0 0 3.887-2.215C18.034 17.59 20 15.223 20 12V5.36l-8-2.8l-8 2.8V12c0 3.223 1.966 5.588 4.104 7.21A17.8 17.8 0 0 0 12 21.428m6.072-13.085l-7.071 7.071l-4.243-4.242l1.415-1.415L11 12.586l5.657-5.657z"
+                    ></path></svg
+                >
+                <h4 class="mt-5">We are Safety</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Numquam vitae excepturi quia optio vel asperiores.
+                </p>
+            </article>
+            <article
+                class="border-2 border-cta-600 p-5 shadow-sm transition-all duration-300 hover:shadow-xl"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    class="mx-auto"
+                    viewBox="0 0 28 28"
+                    ><path
+                        fill="#CE6420"
+                        d="M20.75 3a1 1 0 0 1 .78.375l.075.106l4.25 7a1 1 0 0 1-.015 1.063l-.077.102l-11 13a1 1 0 0 1-1.442.088l-.084-.088l-11-13a1 1 0 0 1-.15-1.052l.058-.113l4.25-7a1 1 0 0 1 .725-.473L7.25 3zm-3.235 9h-7.031l3.515 8.672zm5.329 0h-3.171l-2.917 7.195zM8.326 12H5.155l6.087 7.193zm1.348-7H7.811l-3.036 5h3.47zm6.572 0h-4.493l-1.429 5h7.351zm3.942 0h-1.863l1.429 5h3.47z"
+                    ></path></svg
+                >
+                <h4 class="mt-5">Providing Quality</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Numquam vitae excepturi quia optio vel asperiores.
+                </p>
+            </article>
+            <article
+                class="border-2 border-cta-600 p-5 shadow-sm transition-all duration-300 hover:shadow-xl"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    class="mx-auto"
+                    viewBox="0 0 24 24"
+                    ><path
+                        fill="#CE6420"
+                        d="M13 9V1.07A8.01 8.01 0 0 1 19.75 7c.16.64.25 1.31.25 2zm4.66-2c-.48-1.35-1.43-2.5-2.66-3.19V7zM6 15v-2h12v2c0 1.59-.63 3.12-1.76 4.24A5.97 5.97 0 0 1 12 21a5.97 5.97 0 0 1-4.24-1.76A5.97 5.97 0 0 1 6 15m-2 0c0 2.12.84 4.16 2.34 5.66S9.88 23 12 23s4.16-.84 5.66-2.34S20 17.12 20 15v-4H4zm7-6V1.07C7.06 1.56 4 4.92 4 9z"
+                    ></path></svg
+                >
+                <h4 class="mt-5">Quick and easy</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Numquam vitae excepturi quia optio vel asperiores.
+                </p>
+            </article>
+            <article
+                class="border-2 border-cta-600 p-5 shadow-sm transition-all duration-300 hover:shadow-xl"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    class="mx-auto"
+                    viewBox="0 0 21 24"
+                    ><path
+                        fill="#CE6420"
+                        d="M3.267 23.498a5.106 5.106 0 0 1-.044-1.068l-.001.015l.017-.844l1.07-.034l.502-.761c.217-.34.438-.634.678-.911l-.008.009l.16-.135h5.054c4.89 0 5.065.006 5.194.107c.235.266.456.559.654.868l.017.028l.535.794l1.07.034l.017.704c.028 1.026-.017 1.28-.24 1.504a.488.488 0 0 1-.448.185h.002a.496.496 0 0 1-.449-.184l-.001-.001c-.169-.16-1.746-2.434-1.82-2.62a42.085 42.085 0 0 0-2.911-.098c-.565 0-1.128.011-1.688.032l.081-.002l-4.485.006l-.872 1.296a17.106 17.106 0 0 1-1.058 1.474l.026-.034a.588.588 0 0 1-.38.138H3.93a.702.702 0 0 1-.663-.497zm7.42-5.093l-4.607-.017l-.897-.902l-.902-.902v-2.425c0-1.33.028-2.665.056-2.96a6.423 6.423 0 0 1 3.483-5.07l.037-.017c.46-.242.994-.433 1.556-.546l.038-.006a7.736 7.736 0 0 1 2.896.089l-.051-.01a6.556 6.556 0 0 1 2.886 1.646l-.001-.001a6.392 6.392 0 0 1 1.802 3.311l.007.041a21.914 21.914 0 0 1 .117 3.216l.001-.038l.028 2.755l-.924.924l-.924.918zm-.89-2.56a.701.701 0 0 0-.238.944l-.002-.003c.174.293.333.338 1.172.338h.766l.203-.186a.676.676 0 0 0-.104-1.108l-.003-.002c-.152-.096-.287-.113-.89-.113c-.65-.004-.729.007-.904.125zM6 10.05a5.343 5.343 0 0 0-.319 2.225l-.001-.016l-.006 1.04l.907.913l.911.909l.428-.011c.422-.006.422-.006.687-.265l.259-.259h3.662l.265.259l.259.259h.88l1.786-1.786v-1.03a5.27 5.27 0 0 0-.38-2.396l.013.035a5.033 5.033 0 0 0-3.704-3.035l-.031-.005a4.698 4.698 0 0 0-.902-.086h-.004a5.083 5.083 0 0 0-4.699 3.215l-.012.034zm3.431-5.916l.13-.874c.067-.48.13-.88.13-.89s-2.18-.011-4.845-.011H0V1.007h9.69V.866a1.08 1.08 0 0 1 .613-.808l.007-.003a1.296 1.296 0 0 1 .815.02l-.009-.003c.287.139.5.394.578.702l.002.007l.039.226h9.674v1.352h-9.696l.028.18c.074.434.203 1.409.203 1.498s-.107.096-1.256.096z"
+                    ></path></svg
+                >
+                <h4 class="mt-5">Private Services</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Numquam vitae excepturi quia optio vel asperiores.
+                </p>
+            </article>
         </div>
 
         <div class="bg-gray-600 grid gap-5 lg:grid-cols-4 mb-20">
