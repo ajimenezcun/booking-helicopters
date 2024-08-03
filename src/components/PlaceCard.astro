@@ -8,34 +8,32 @@ const { place, url } = Astro.props;
 let link = `/places/${url}`;
 ---
 
-<div class="group">
-    <a href={link}>
-        <div class="relative overflow-hidden">
-            <img
-                src="place-1.jpg"
-                alt=""
-                class="transition-all duration-300 group-hover:scale-[1.1]"
-            />
-            <div
-                class="absolute left-0 bottom-0 w-full py-2 pl-5 bg-gradient-to-t from-black to-transparent"
-            >
-                <h3
-                    class="text-white transition-all duration-300 group-hover:underline"
-                >
-                    {place}
-                </h3>
-            </div>
-        </div>
-    </a>
-    <p class="mt-5 mb-5">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Necessitatibus, nam obcaecati laboriosam cumque quos eum corporis
-        tempora eos facilis laborum ut deleniti omnis consequatur dolor ipsam
-        autem magnam labore deserunt?
-    </p>
-    <a
-        href={link}
-        class="bg-black text-white px-5 py-3 transition-all duration-300 hover:shadow-xl"
-        >Explore</a
+<article class="relative mb-10 bg-cta-600 p-5 sm:bg-none sm:p-0">
+    <slot name="place-thumb" />
+    <div
+        class="sm:absolute flex justify-end w-full h-full top-0 left-0 bg-gradient-to-l from-cta-600"
     >
-</div>
+        <div class="py-5 sm:px-5 sm:py-10 text-white lg:w-2/3 xl:w-1/2">
+            <h4 class="text-white mb-3 text-3xl">{place}</h4>
+            <slot name="description" />
+
+            <div class="flex flex-col mt-5 mb-10 gap-2">
+                <a href="#" class="underline">{place} Tours in Helicopter</a>
+                <a href="#" class="underline"
+                    >Helicopter Overflights in {place}</a
+                >
+                <a href="#" class="underline"
+                    >Helicopter Transfers from {place}</a
+                >
+            </div>
+
+            <a
+                href={link}
+                class="bg-second-950 text-white relative py-4 px-7 text-lg font-bold flex w-fit mt-5 items-center gap-3 justify-center transition-all duration-300 hover:bg-second-950 hover:text-white hover:shadow-xl sm:bg-cta-600 lg:w-fit lg:m-0"
+            >
+                <span>Explore {place}</span>
+                <img src="svg/arrow-next-white.svg" width="20" alt="" />
+            </a>
+        </div>
+    </div>
+</article>
