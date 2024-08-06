@@ -1,5 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import TourCard from "../../components/TourCard.astro";
+import OverflightCard from "../../components/OverflightCard.astro";
+import TransferCard from "../../components/TransferCard.astro";
 ---
 
 <Layout
@@ -7,38 +10,226 @@ import Layout from "../../layouts/Layout.astro";
     description=""
     headerTheme="transparent"
 >
-    <section class="flex lg:h-[400px] mb-10">
-        <div class="overview lg:w-3/5 lg:pl-14">
-            <h1 class="mt-[150px]">Cancun</h1>
-            <p class="text-lg mb-5 pr-5">
+    <section class="overview lg:h-[400px] mb-10">
+        <article class="pt-[150px] lg:w-10/12 lg:mx-auto">
+            <h1>Cancun</h1>
+            <div class="flex gap-2 mb-5 flex-row">
+                <a href="/" class="text-cta-600 hover:underline"
+                    >Caribe Helicopter</a
+                >
+                <img src="/svg/arrow-next-cta.svg" width="16" alt="" />
+                <a href="/places" class="text-cta-600 hover:underline">Places</a
+                >
+                <img src="/svg/arrow-next-cta.svg" width="16" alt="" />
+                <span>Cancun</span>
+            </div>
+            <p class="text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consequatur, nisi odit! Delectus soluta dolor ipsam voluptate
                 nesciunt aperiam accusantium asperiores consectetur tenetur
                 harum.
             </p>
-        </div>
-        <div class="bg-gray-50 lg:w-2/5">
-            <img src="../demo.png" alt="" class="lg:h-[400px] object-cover" />
-        </div>
-    </section>
-    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
-        <h2>Helicopter Flights</h2>
-        <p class="mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            minima necessitatibus repudiandae modi sit corporis maxime
-            perferendis ipsum sapiente deserunt. Temporibus molestiae
-            voluptatibus soluta! Eveniet vel mollitia facere a consequuntur?
-        </p>
+        </article>
     </section>
 
-    <section class="container mb-20 lg:w-10/12 lg:flex-row lg:mx-auto">
-        <h2>Helicopter Overflights</h2>
-        <p class="mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            minima necessitatibus repudiandae modi sit corporis maxime
-            perferendis ipsum sapiente deserunt. Temporibus molestiae
-            voluptatibus soluta! Eveniet vel mollitia facere a consequuntur?
-        </p>
+    <section
+        class="container mt-24 mb-20 p-5 flex flex-col gap-5 lg:w-10/12 lg:flex-row lg:p-0 lg:mx-auto"
+    >
+        <div class="lg:w-1/3">
+            <img src="/cancun-place.jpg" class="h-full object-cover" alt="" />
+        </div>
+        <article class="lg:w-2/3 lg:py-10">
+            <h2>About Cancun</h2>
+            <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem aperiam quod cupiditate eaque debitis? Pariatur
+                itaque recusandae aspernatur placeat odit, velit nesciunt, optio
+                natus laboriosam at, qui officiis unde cum!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore corrupti eligendi natus alias laboriosam eaque obcaecati
+                minima molestias explicabo. Eaque iure ut sunt nemo nesciunt
+                dolor repudiandae, quis deleniti nam?
+            </p>
+        </article>
+    </section>
+
+    <section
+        class="container mb-20 p-5 flex flex-wrap lg:w-10/12 lg:flex-row lg:gap-5 lg:mx-auto"
+    >
+        <div class="" id="sec-experiences">
+            <h2>Cancun Tours in Helicopter</h2>
+            <p class="mb-10">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, deserunt odio. Incidunt, possimus aspernatur
+                numquam quae libero velit, odio, quo nihil et quidem quasi ipsam
+                porro nostrum. Explicabo, atque quam?
+            </p>
+
+            <div class="flex flex-col gap-5 lg:flex-row">
+                <div class="lg:w-3/4">
+                    <TourCard
+                        title="Holbox Fast Day"
+                        duration="4 Hrs"
+                        pricing="500"
+                        link="holbox-helicopter-fast-day"
+                    >
+                        <img src="cancun-thumb.jpg" alt="" slot="thumb" />
+                        <p class="text-sm mb-5" slot="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Natus tenetur nobis voluptates aut, cupiditate
+                            ipsa sapiente fugit a blanditiis reprehenderit
+                            quas...
+                        </p>
+                    </TourCard>
+                    <TourCard
+                        title="Tulum Culture & Adenture"
+                        duration="6 Hrs"
+                        pricing="460"
+                        link="tulum-culture-adventure"
+                    >
+                        <img src="cozumel-thumb.jpg" alt="" slot="thumb" />
+                        <p class="text-sm mb-5" slot="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Natus tenetur nobis voluptates aut, cupiditate
+                            ipsa sapiente fugit a blanditiis reprehenderit
+                            quas...
+                        </p>
+                    </TourCard>
+                </div>
+
+                <div class="lg:w-1/4">
+                    <div class="bg-gray-100 shadow-xl p-5">
+                        <b class="block font-josefin text-xl"
+                            >Do you need help?</b
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="container mb-20 p-5 flex flex-wrap lg:w-10/12 lg:flex-row lg:gap-5 lg:mx-auto"
+    >
+        <div class="" id="sec-experiences">
+            <h2>Helicopter Overflights from Cancun</h2>
+            <p class="mb-10">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, deserunt odio. Incidunt, possimus aspernatur
+                numquam quae libero velit, odio, quo nihil et quidem quasi ipsam
+                porro nostrum. Explicabo, atque quam?
+            </p>
+
+            <div class="flex flex-col gap-5 lg:flex-row">
+                <div class="lg:w-3/4">
+                    <OverflightCard
+                        title="Panoramic Flight in Cancun"
+                        info={{
+                            place: "Cancun",
+                            time: "20 Min",
+                            capacity: 5,
+                        }}
+                        pricing="500"
+                        link="panoramic-helicopter-flight-in-cancun"
+                    >
+                        <img src="cancun-thumb.jpg" alt="" slot="thumb" />
+                        <p class="text-sm mb-5" slot="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Natus tenetur nobis voluptates aut, cupiditate
+                            ipsa sapiente fugit a blanditiis reprehenderit
+                            quas...
+                        </p>
+                    </OverflightCard>
+                    <OverflightCard
+                        title="Panoramic Flight in Isla Mujeres"
+                        info={{
+                            place: "Isla Mujeres",
+                            time: "15 Min",
+                            capacity: 5,
+                        }}
+                        pricing="460"
+                        link="panoramic-helicopter-flight-in-isla-mujeres"
+                    >
+                        <img src="cozumel-thumb.jpg" alt="" slot="thumb" />
+                        <p class="text-sm mb-5" slot="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Natus tenetur nobis voluptates aut, cupiditate
+                            ipsa sapiente fugit a blanditiis reprehenderit
+                            quas...
+                        </p>
+                    </OverflightCard>
+                </div>
+
+                <div class="lg:w-1/4">
+                    <div class="bg-gray-100 shadow-xl p-5">
+                        <b class="block font-josefin text-xl"
+                            >Do you need help?</b
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="container mb-20 p-5 flex flex-wrap lg:w-10/12 lg:flex-row lg:gap-5 lg:mx-auto"
+    >
+        <div class="" id="sec-experiences">
+            <h2>Helicopter Transfer from Cancun</h2>
+            <p class="mb-10">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, deserunt odio. Incidunt, possimus aspernatur
+                numquam quae libero velit, odio, quo nihil et quidem quasi ipsam
+                porro nostrum. Explicabo, atque quam?
+            </p>
+
+            <div class="flex flex-col gap-5 lg:flex-row">
+                <div class="lg:w-3/4">
+                    <TransferCard
+                        title="Cancun Helicopter Transfer to Puerto Morelos"
+                        from="Cancun"
+                        to="Puerto Morelos"
+                        duration="4 Hrs"
+                        pricing="500"
+                        link="cancun-to-puerto-morelos"
+                    >
+                        <img src="cancun-thumb.jpg" alt="" slot="thumb" />
+                        <p class="text-sm mb-5" slot="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Natus tenetur nobis voluptates aut, cupiditate
+                            ipsa sapiente fugit a blanditiis reprehenderit
+                            quas...
+                        </p>
+                    </TransferCard>
+                    <TransferCard
+                        title="Cancun Helicopter Transfer to Cozumel"
+                        from="Cancun"
+                        to="Cozumel"
+                        duration="6 Hrs"
+                        pricing="460"
+                        link="cancun-to-cozumel"
+                    >
+                        <img src="cozumel-thumb.jpg" alt="" slot="thumb" />
+                        <p class="text-sm mb-5" slot="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Natus tenetur nobis voluptates aut, cupiditate
+                            ipsa sapiente fugit a blanditiis reprehenderit
+                            quas...
+                        </p>
+                    </TransferCard>
+                </div>
+
+                <div class="lg:w-1/4">
+                    <div class="bg-gray-100 shadow-xl p-5">
+                        <b class="block font-josefin text-xl"
+                            >Do you need help?</b
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <style>
